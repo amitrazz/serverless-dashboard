@@ -12,5 +12,5 @@ module.exports = {
         'release: v${nextRelease.version} \n\n${nextRelease.notes}\n\n[skip ci]',
     },
   ],
-  repositoryUrl: 'https://github.com/amitrazz/serverless-dashboard/backend',
+  repositoryUrl: 'https://github.com/amitrazz/serverless-dashboard',
 };
