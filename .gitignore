@@ -1,0 +1,73 @@
+# ---- Node.js & Monorepo ----
+node_modules/
+.env
+.env.*.local
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- IDEs ----
+.vscode/
+.idea/
+*.swp
+
+# ---- TypeScript ----
+*.tsbuildinfo
+
+# ---- Logs & Coverage ----
+logs/
+*.log
+coverage/
+.nyc_output/
+out/
+
+# ---- Frontend (React/Next.js/Vite) ----
+frontend/.next/
+frontend/.turbo/
+frontend/.cache/
+frontend/.eslintcache
+frontend/coverage/
+frontend/public/build/
+frontend/build/
+
+# ---- Backend (NestJS/Express) ----
+backend/dist/
+backend/coverage/
+backend/.cache/
+backend/.env
+backend/.eslintcache
+
+# ---- Terraform / Infra ----
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+
+# ---- Lint/Prettier ---
+.prettiercache
+
+# ---- shadcn/ui generated styles ----
+components.json
+tailwind.config.ts
+postcss.config.js
+
+# TurboRepo
+turbo/
+turbo.json
+
+# Storybook
+storybook-static/
+*.story.tsx
+
+# Docker
+*.local
+docker-compose.override.yml
+
