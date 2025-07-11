@@ -31,9 +31,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Upgrade npm
+        run: npm install -g npm@10
 
-      - name: Install dependencies
-        run: npm i
+      - name: Install all workspaces
+        run: npm install --workspaces
 
       - name: Sync versions across frontend/backend
         run: node sync-version.js
