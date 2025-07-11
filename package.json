@@ -2,15 +2,13 @@
   "name": "serverless-dashboard",
   "private": true,
   "version": "1.0.0",
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
+  "workspaces": ["frontend", "backend"],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run start:dev --workspace backend\"",
     "build": "npm run build --workspace frontend && npm run build --workspace backend",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+     "sync-version": "node sync-version.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
