@@ -36,7 +36,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm i
+        run: npm install
 
       - name: Lint
         run: npm run lint
@@ -46,7 +46,7 @@ jobs:
 
       # - name: Test
       #   run: npm run test:ci
-      # Ensure test:ci is defined in frontend/package.json
+      #   # Optional: Enable if test:ci exists in frontend/package.json
 
   backend:
     name: Backend CI
@@ -66,7 +66,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm i
+        run: npm install
 
       - name: Lint
         run: npm run lint
@@ -76,4 +76,4 @@ jobs:
 
       # - name: Test
       #   run: npm run test:ci
-      # Ensure test:ci is defined in backend/package.json
+      #   # Optional: Enable if test:ci exists in backend/package.json
